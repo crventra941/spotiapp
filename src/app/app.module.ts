@@ -16,6 +16,15 @@ import { ROUTES } from './app.routes';
 // Services
 import { SpotifyService } from './services/spotify.service';
 
+// Pipes
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
+
+import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
+import { ErrorComponent } from './components/shared/error/error.component';
+
+
 
 @NgModule({
   declarations: [
@@ -24,6 +33,11 @@ import { SpotifyService } from './services/spotify.service';
     SearchComponent,
     ArtistaComponent,
     NavbarComponent,
+    NoimagePipe,
+    TarjetasComponent,
+    LoadingComponent,
+    DomseguroPipe,
+    ErrorComponent,
     
   ],
   imports: [

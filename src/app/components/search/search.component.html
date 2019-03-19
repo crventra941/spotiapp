@@ -1,3 +1,11 @@
-<p>
-  search works!
-</p>
+<div class="row animated fadeIn">
+  <div class="col">
+      <input #termino type="text" (keyup)="buscarArtista(termino.value)" class="form-control" placeholder="Buscar artista">
+  </div>
+</div>
+
+<app-loading *ngIf="loading" class="m-5"></app-loading>
+
+<app-error *ngIf="error" [mess]="msg"></app-error>
+
+<app-tarjetas *ngIf="!loading" [items]="artistas" ></app-tarjetas>
